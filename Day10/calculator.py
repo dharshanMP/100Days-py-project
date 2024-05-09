@@ -59,5 +59,6 @@ def calculator_function():
             calculator_function()
         else:
             os.system('cls')  
+
 calculator_function()  
          
