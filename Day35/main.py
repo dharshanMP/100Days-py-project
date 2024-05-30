@@ -1,14 +1,17 @@
 import requests
 from twilio.rest import Client
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 MY_LAT = 11.016844
 MY_LON = 76.955833
 
 endpoint_weather = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = os.environ.get("OWM_API_KEY")
-account_sid = "AC60369958b73f3d018066af6b84cd0541"
-auth_token = os.environ.get("OWN_AUTH_TOKEN")
+api_key = os.getenv('MY_API_KEY')
+account_sid = os.getenv('MY_AUTH_SID')
+auth_token = os.getenv('MY_AUTH_TOKEN')
 
 #print(api_key)
 
@@ -35,7 +38,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
     body= "It's going to rain ⛈️ stay safe...(py)",
-    from_='+17372655676',
-    to='+916382336654'
+    from_=os.getenv('TWILIO_NUM'),
+    to=os.getenv('MY_NUM')
     )
     print(message.status)
