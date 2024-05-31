@@ -1,0 +1,53 @@
+body {
+  background-color: gainsboro;
+}
+
+.blue {
+  color: blue;
+}
+.blue div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: blue;
+}
+
+.red {
+  color: red;
+}
+.red div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: red;
+}
+
+.black {
+  color: black;
+}
+.black div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.yellow {
+  color: yellow;
+}
+.yellow div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: yellow;
+}
+
+.pink {
+  color: pink;
+}
+.pink div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: pink;
+}
