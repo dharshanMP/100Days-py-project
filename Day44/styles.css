@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+img {
+  border: black;
+  margin: 50px;
+  border: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
